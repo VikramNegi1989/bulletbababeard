@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vikram Negi's Webpage</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #fefefe;
+        color: #444;
+        line-height: 1.6;
+      }
+      header {
+        background-color: #0078d7;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+      button {
+        background-color: #0078d7;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005bb5;
+      }
+      form {
+        max-width: 500px;
+        margin: 20px 0;
+        padding: 15px;
+        background: #f4f4f4;
+        border: 5px solid #ddd;
+        border-radius: 5px;
+      }
+      form input,
+      form textarea,
+      form button {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      form button {
+        background-color: #0078d7;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #005bb5;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      h1 {
+        animation: fadeIn 2s ease-in-out;
+      }
+      p {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      button {
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+      button:hover {
+        transform: scale(1.1);
+        background-color: #005bb5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Vikram Negi's Webpage</h1>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Vikram Negi, a passionate gamer and fitness enthusiast. I
+        love learning new skills and sharing my journey with others!
+      </p>
+      <img src="me.png" alt="Vikram Negi" width="200" />
+      <h3>Watch My Latest Video</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Rr6Q0_4IRGM?si=8AUOnPfl46WBeHkX"
+        title="YouTube video player"
+        frameborder="1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <h3>Listen to My Playlist</h3>
+<audio controls>
+    <source src="your-audio-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>
+          Gaming (Check out <strong>Jugaadu Joystick</strong> on YouTube!)
+        </li>
+        <li>Fitness and staying healthy</li>
+        <li>Learning web development</li>
+      </ul>
+      <a href="https://www.youtube.com/@BulletBabaBeard" target="_blank">
+        <button>visit my youtube channel</button>
+      </a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/{hashid}" method="POST">
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Your Message"
+          required
+        ></textarea
+        ><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <h3>Follow Me</h3>
+      <a href="https://www.youtube.com/jugaadujoystick" target="_blank"
+        >YouTube</a
+      >
+      <a href="https://www.instagram.com/vikramnegi" target="_blank"
+        >Instagram</a
+      >
+      <a href="https://twitter.com/vikramnegi" target="_blank">Twitter</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Vikram Negi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
